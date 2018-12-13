@@ -1,0 +1,25 @@
+/*公共样式*/
+body,div,ul,li,p,input,dl,dt,dd,h4{margin:0;padding:0;box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;color:#666}
+div.container{width:1200px;margin:0 auto;font-size: 13px;color:#666;position:relative;}
+div.footer_top{width:1200px;height:120px;background:#3c3c3c;font-size:18px;color:#c5b9ae;}
+div.footer_top ul{width:1000px;margin:0 auto;}
+div.footer_top ul li{float:left;width:20%;text-align:center;line-height:120px;}
+div.footer_bottom{width:1000px;margin:0 auto;}
+div.footer_bottom_top:after{content: "";display: block;clear: both;}
+div.footer_bottom_top ul{float:left;}
+ul.footer_bt_right{margin-left:50px;}
+ul.footer_bt_left li{float:left;margin:25px 15px;text-align:center;}
+ul.footer_bt_left li dt{margin:8px 0;font-size:14px;color:#444;}
+ul.footer_bt_left li dd{margin:8px 0;font-size:13px;}
+ul.footer_bt_left li dd a{color:#888;}
+ul.footer_bt_left li dd a:hover{color:#dd801a}
+ul.footer_bt_right li{float:left;margin:33px 15px;}
+ul.footer_bt_right li img{width:80px;}
+ul.footer_bt_right li p{text-align: center;color:#444;}
+ul.footer_bt_right li:first-child h4{color:#444;font-weight: normal;font-size:16px;line-height:30px;text-align: left}
+ul.footer_bt_right li:first-child p{font-size:20px;line-height:30px;color:#dd801a;text-align: left}
+div.footer_bottom_bottom ul{border-top:1px solid #efefef;padding:20px 0;}
+div.footer_bottom_bottom ul li{text-align: center;padding:5px 0;color:#000;}
+div.footer_bottom_bottom ul li span{color:#dd801a}

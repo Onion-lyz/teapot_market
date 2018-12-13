@@ -1,0 +1,68 @@
+/*公共样式*/
+    body,div,ul,li,p,input,h3{margin:0;padding:0;box-sizing: border-box;}
+    ul{list-style: none;}
+    a{text-decoration: none;color:#666}
+    div.container{width:1200px;margin:0 auto;font-size: 13px;color:#666;position:relative;}
+/*头部top模块样式*/
+    div.header_top{width:100%;border: 1px solid #ddd;padding:0 100px;background:#f2f2f2;}
+    div.header_top:after{content:"";display: block;clear:both;}
+    ul.header_top_left{float:left;}
+    ul.header_top_right{float:right;}
+    div.header_top li{float:left;padding:6px;}
+    ul.header_top_right li a{border-right:1px solid #ddd; padding-right:8px;}
+    ul.header_top_right li:last-child a{border:none}
+    ul.header_top_right li:last-child ul{position:absolute;top:31px;right:100px;width: 405px;border: 1px solid #ddd;background: #fff;z-index: 3;text-align: center;border-top:none;display: none}
+    ul.header_top_right li:last-child ul li{float:left;padding:5px 19px;margin:0}
+    ul.header_top_right li:last-child ul li img{width:90px;}
+    ul.header_top_right li:last-child a img{vertical-align:top;}
+    div.header_middle{width:100%}
+    div.header_middle_top{width:1000px;height:150px;display: block;margin: 0 auto;position:relative;overflow: hidden;transition: all 1s linear}
+    div.header_middle_top span{position:absolute;top:0;right:0;background: rgba(0,0,0,0.2);color:#fff;cursor:pointer;display:none;}
+    div.header_middle_top:hover span{display: block}
+    div.header_middle_bottom{width:1000px;height:150px;margin:0 auto;}
+    div.header_mb_left{float:left;padding:40px 0 30px 0;}
+    div.header_mb_left img{width:218px;height:47px;}
+    div.header_mb_left p{line-height: 30px;padding:0 40px;}
+    div.header_mb_left p:hover a{color:#dd801a}
+    div.header_mb_center{float:left;margin:40px 0 0;}
+    div.header_mb_center_top{width:400px;height:40px;margin:10px 50px;border:1px solid #dd801a;position: relative;}
+    div.header_mb_center_top span{height:38px;padding:11px 15px;color:#dd801a;cursor:pointer;}
+    /*搜索框下拉菜单*/
+    div.header_mb_center_top span ul{position:absolute;left:-1px;border:1px solid #ddd;background:#fff;border-top:none;display:none;cursor: pointer;}
+    div.header_mb_center_top span ul li{padding:0 15px;line-height: 30px;}
+    div.header_mb_center_top span ul li:hover{background:#ddd;color:#fff;}
+    div.header_mb_center_top input{width:230px;height:38px;border:0;outline:0;margin-left:15px;}
+    div.header_mb_center_top input:nth-child(3){width:75px;height:38px;background:#dd801a;color:#fff;float:right;
+    font-size:16px;cursor:pointer;}
+    ul.header_mb_center_bottom{margin:0 50px;}
+    ul.header_mb_center_bottom li{float:left;padding:0 10px;}
+    ul.header_mb_center_bottom li:hover a{color:#dd801a;}
+    ul.header_mb_right{float:right;margin-top:30px;}
+    ul.header_mb_right li{float:left;padding:0 10px;}
+    div.header_bottom{width:100%;height:43px;background:#84190b;padding:0 100px;}
+    div.header_bottom a{display:inline-block;width:79.5px;line-height:43px;color:#fff;font-size: 16px;text-align:center;}
+    .active{background:#dd801a !important;}
+    /*左边开关门*/
+    div.body_leftside{border:1px solid #ccb295;background:#fffdfa;color:#9e8a73;position:fixed;bottom:100px;text-align: center;z-index: 5;}
+    div.body_leftside div:first-child{width:100%;font-size:16px;padding:10px;text-align:center;border-bottom:1px dashed #ccb295}
+    div.body_leftside ul li{width:90px;padding:5px}
+    div.body_leftside ul li span{display:block;color:#736250;padding:3px;}
+    div.body_leftside ul li img{width:70px;}
+    div.body_leftside div:last-child{line-height: 26px;background:#ccb295;color:#fff;cursor: pointer;}
+    div.body_rightside{width:35px;height:100%;position:fixed;top:0;margin-left:1165px;background:#454545;z-index: 5;}
+    div.body_rightside ul{margin-top:120px;}
+    div.body_rightside ul li:hover{background: #dd801a}
+    div.body_rightside ul li{cursor: pointer;position:relative;margin:15px auto;}
+    div.body_rightside ul li p{position:absolute;top:0;right:35px;line-height:30px;height:30px;overflow:hidden;width:0;text-align: center;background:#dd801a;color:#fff;transition:all 0.5s linear}
+    div.body_rightside ul li i{width:30px;height:30px;display:block;margin:auto;}
+    div.body_rightside ul li:first-child i{background:url(../img/header/sidebaricon.png) no-repeat;background-position:-3px 0;}
+    div.body_rightside ul li:first-child:hover p{width:200px}
+    div.body_rightside ul li:nth-child(2){border-top:1px solid #666;border-bottom:1px solid #666;}
+    div.body_rightside ul li:nth-child(2) span{color:#fff;padding:10px;text-align:center;margin:auto;display:block;}
+    div.body_rightside ul li:nth-child(2) i{background:url(../img/header/sidebaricon.png) no-repeat;background-position:-1px -210px;}
+    div.body_rightside ul li:nth-child(2):hover i{background-position:-32px -210px;}
+    div.body_rightside ul li:nth-child(3) div{position:absolute;right:35px;top:-43px;overflow: hidden;width:0;transition: all 0.5s linear}
+    div.body_rightside ul li:nth-child(3):hover div{width:196px;}
+    div.body_rightside ul li:nth-child(3) i{background:url(../img/header/sidebaricon.png) no-repeat;background-position:5px -296px;}
+    div.body_rightside ul li:last-child i{background:url(../img/header/sidebaricon.png) no-repeat;background-position:-3px -184px;}
+    div.body_rightside ul li:last-child:hover p{width:100px}
